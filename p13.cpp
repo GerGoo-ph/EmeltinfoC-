@@ -7,16 +7,16 @@ int main()
     setlocale(LC_ALL,"");
     int egesz, i, darab=0;
     do{
-        cout << "Adj meg egypozitív egész számot" << endl;
+        cout << "Adj meg egypozitÃ­v egÃ©sz szÃ¡mot" << endl;
         cin >> egesz;
     }while(egesz<=0);
-    cout << egesz << " osztói: ";
+    cout << egesz << " osztÃ³i: ";
     for(i=1;i<=egesz;i++){
         if(egesz%i==0){
             cout << i << ", ";
             darab++;
         }
     }
-    cout << "\nÖsszesen " << darab <<" darab osztó." <<endl;
+    cout << "\nÃ–sszesen " << darab <<" darab osztÃ³." <<endl;
     return 0;
 }
