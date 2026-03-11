@@ -8,7 +8,7 @@ int main()
     string name;
     cout << "Mi a neved?" << endl;
     getline(cin,name);
-    cout << "Lépcsõzetesen" << endl;
+    cout << "LÃ©pcsÃµzetesen" << endl;
     for(int i=1;i<=7;i++){
             for(int j=5;j>=i-1;j--){
                 cout << " ";
