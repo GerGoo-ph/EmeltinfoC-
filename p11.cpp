@@ -6,7 +6,7 @@ int main()
 {   setlocale(LC_ALL,"");
     int number, elozo=1, azelotti=1, kovetkezo=1;
     do{
-    cout << "Írj be egy számot"<<endl;
+    cout << "Ãrj be egy szÃ¡mot"<<endl;
     cin >> number;
     }
     while(number<=2);
