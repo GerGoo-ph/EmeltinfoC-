@@ -16,7 +16,7 @@ int main (){
     getline (cin , s);
     s2=s;
 
-    cout << s2;
+    cout << s2 << endl;
 
     for (int i = 0; i < s2.length(); i++)
     {
@@ -31,7 +31,7 @@ int main (){
     for (int i=0; i<s2.length(); ++i){
         cout << s2[i];
         cout << s2[s2.length()-i-1]<<endl;
-        if(s[i]==s2[s2.length()-i-1]){
+        if(s2[i]==s2[s2.length()-i-1]){
             cout << "test" << endl;
         }
         else{
