@@ -5,9 +5,7 @@ using namespace std;
 
 int main (){
 
-    setlocale(LC_ALL,"");
-
-    cout << "Írd be a mondatot, amelyről meg akarsz biszonyosodni, hogy palindrom. " << endl << "Csak kis betűt használj ékezetek nélkül." << endl;
+    cout << "Írd be a mondatot, amelyről meg akarsz biszonyosodni, hogy palindrom. " << endl << "Csak kis betűt használj ékezetek nélkül. (dupla betűket [pl.: ny; ty; sz...] nem szereti.)" << endl;
 
     string s ;
     string s2;
@@ -30,16 +28,17 @@ int main (){
 
     for (int i=0; i<s2.length(); ++i){
         cout << s2[i];
-        cout << s2[s2.length()-i-1]<<endl;
+        cout << s2[s2.length()-i-1];
         if(s2[i]==s2[s2.length()-i-1]){
-            cout << "test" << endl;
+            cout << "X" << endl;
         }
         else{
             palindrom++;
+            cout << endl;
         }
     }
     if(palindrom==0){
-        cout << "Palindrom";
+        cout << endl << "A(z) " << s << " szöveg"<< " palindrom";
     }
     else{
         cout << "NEM Palindrom";
