@@ -12,24 +12,14 @@ int main(){
     n=s.length();
     char s1[n], s2[n];
 
-    for(int i=0;i<n;i++){
-        s1[i]=s[i];
-        }
+    for(int i=0;i<n;i++) s1[i]=s[i];
 
-    for(int l=0;l<n;l++){
-        s2[l]=s[s.length()-l-1];
-        }
+    for(int l=0;l<n;l++) s2[l]=s[s.length()-l-1];
 
-    for(int j=0;j<n;j++){
-        cout << s2[j];
-        }
+    for(int k=0;k<n;k++) if(s1[k]!=s2[k]) pali++;
 
-    for(int k=0;k<n;k++){
-        if(s1[k]!=s2[k]){
-            pali++;
-            }
-        }
-    if(pali==0) cout << "trews";
+    if(pali==0) cout << endl << "palindrom" << endl;
+    else cout << endl << "nem palindrom" << endl;
 
     return 0;
 }
